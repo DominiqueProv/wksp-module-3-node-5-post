@@ -10,6 +10,8 @@
 
 `GET` requests are meant to _fetch_ data from ...
 
+// serve data static
+
 ---
 
 The service initiating the request is usually a browser, or some sort of frontend that needs the data at this endpoint.

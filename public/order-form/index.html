@@ -9,15 +9,14 @@
     <body>
         <div class='centered-container'>
             <div id='order-image' class='order-image'></div>
-            <form id="sales-form" name="salesForm" onsubmit="handleSubmit(event)">
-                <input id="user-id" type="text" name="userId" style="display: none" />
+            <form id="sales-form" name="salesForm" onsubmit="handleSubmit(event)" method="POST" action="/order">
                 <div class='form-item select'>
                     <label for='order'>Your order</label>
                     <select id="order" class='order' name="order" onchange="updateForm()" class='order-select' required>
                         <option value='undefined'>Pick an item</option>
                         <option value='shirt'>T-shirt</option>
                         <option value='socks'>Socks</option>
-                        <option value='bottle'>Bottle</option>
+                        <option value='bottles'>Bottle</option>
                     </select>
                 </div>
                 <div id='sizing' class='js-size form-item select sizing'>
@@ -58,7 +57,7 @@
                             <input id="city" type="text" name="city" placeholder="City" required />
                         </div>
                         <div class='form-item'>
-                            <label for="surname">Last Name</label>
+                            <label for="surname">Province</label>
                             <input id="province" type="text" name="province" placeholder="Province" required />
                         </div>
                     </div>
@@ -78,7 +77,7 @@
                     <span class='button-label'>Submit</span>
                 </button>
             </form>
-            <p id="error" class="error-message">ssdf ssdf sdf sdf sd f</div>
+            <p id="error" class="error-message"></div>
         </div>
         <script src="scripts.js"></script>
     </body>
